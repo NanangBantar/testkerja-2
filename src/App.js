@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import CssBaseline from '@mui/material/CssBaseline';
+import Topbar from "./components/Topbar.js";
+import Hero from "./components/Hero.js";
+import Category from './components/Category.js';
+import Trending from "./components/Trending.js";
+import Info from "./components/Info.js";
+
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./assets/slickStyled.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Topbar />
+      <Hero />
+      <Category />
+      <Trending />
+      <Info />
+    </>
   );
 }
 
